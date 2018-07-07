@@ -98,6 +98,9 @@ export class NavbarComponent implements OnInit, OnDestroy
             .subscribe(() => {
                 this.navigation = this._fuseNavigationService.getCurrentNavigation();
             });
+
+        // Remove the custom function menu
+        this._fuseNavigationService.removeNavigationItem('custom-function');
     }
 
     /**

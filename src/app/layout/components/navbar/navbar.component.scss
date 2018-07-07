@@ -78,4 +78,33 @@ navbar {
             }
         }
     }
+
+    .nav-item {
+        color: #000000 !important;
+        overflow: hidden;
+    }
+
+    .nav-item a:hover {
+        color: #2E49D1 !important;
+        background-color: #FFFFFF !important
+    }
+
+    .header {
+        height: 70px !important;
+        width: auto !important;
+        //margin-left: 479px !important;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+
+        .logo-icon {
+            max-width: 125px;
+        }
+    }
+
+    .space {
+        flex: 1 1 auto;
+    }
 }

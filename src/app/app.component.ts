@@ -12,6 +12,7 @@ import { FuseTranslationLoaderService } from '@fuse/services/translation-loader.
 import { navigation } from 'app/navigation/navigation';
 import { locale as navigationEnglish } from 'app/navigation/i18n/en';
 import { locale as navigationTurkish } from 'app/navigation/i18n/tr';
+import { locale as navigationSpanish } from 'app/navigation/i18n/es';
 
 @Component({
     selector   : 'app',
@@ -54,17 +55,20 @@ export class AppComponent implements OnInit, OnDestroy
         // Set the main navigation as our current navigation
         this._fuseNavigationService.setCurrentNavigation('main');
 
+        // Remove the custom function menu
+        this._fuseNavigationService.removeNavigationItem('custom-function');
+
         // Add languages
-        this._translateService.addLangs(['en', 'tr']);
+        this._translateService.addLangs(['es', 'en', 'tr']);
 
         // Set the default language
-        this._translateService.setDefaultLang('en');
+        this._translateService.setDefaultLang('es');
 
         // Set the navigation translations
-        this._fuseTranslationLoaderService.loadTranslations(navigationEnglish, navigationTurkish);
+        this._fuseTranslationLoaderService.loadTranslations(navigationSpanish, navigationEnglish, navigationTurkish);
 
         // Use a language
-        this._translateService.use('en');
+        this._translateService.use('es');
 
         // Set the private defaults
         this._unsubscribeAll = new Subject();

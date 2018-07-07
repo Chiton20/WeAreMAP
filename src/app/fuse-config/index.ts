@@ -10,17 +10,17 @@ import { FuseConfig } from '@fuse/types';
 
 export const fuseConfig: FuseConfig = {
     layout          : {
-        style         : 'vertical-layout-1',
+        style         : 'horizontal-layout-1',
         width         : 'fullwidth',
         navbar        : {
             hidden    : false,
-            position  : 'left',
+            position  : 'top',
             folded    : false,
-            background: 'mat-fuse-dark-700-bg'
+            background: 'mat-white-500-bg'
         },
         toolbar       : {
-            hidden    : false,
-            position  : 'below-static',
+            hidden    : true,
+            position  : 'above',
             background: 'mat-white-500-bg'
         },
         footer        : {

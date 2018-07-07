@@ -24,6 +24,7 @@
         <div class="navbar-content" fusePerfectScrollbar
              [fusePerfectScrollbarOptions]="{suppressScrollX: true}">
             <fuse-navigation layout="vertical"></fuse-navigation>
+
         </div>
 
     </div>
@@ -31,9 +32,19 @@
 </ng-container>
 
 <ng-container *ngIf="layout == 'horizontal'">
-
-    <div class="navbar-horizontal">
-        <fuse-navigation layout="horizontal"></fuse-navigation>
+    <div fxFlex fxFill fxLayout="row" fxLayoutAlign="start center" class="header">
+        <span class="space"></span>
+        <div fxFlex="1 0 auto" fxLayout="row" fxLayoutAlign="start center">
+            <div fxLayout="row" fxLayoutAlign="start center">
+                <div class="logo ml-16">
+                    <img class="img-fluid logo-icon" src="assets/images/logos/we-are-map.png">
+                </div>
+            </div>
+        </div>
+        <div class="navbar-horizontal" fxFlex="0 1 auto" fxLayout="row" fxLayoutAlign="start center">
+            <fuse-navigation layout="horizontal"></fuse-navigation>
+        </div>
+        <span class="space"></span>
     </div>
 
 </ng-container>
