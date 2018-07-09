@@ -6,14 +6,14 @@ export const navigation: FuseNavigation[] = [
         title    : 'Inicio',
         translate: 'NAV.HOME.TITLE',
         type     : 'item',
-        url      : '/inicio'
+        url      : '/home'
     },
     {
         id       : 'portafolio',
         title    : 'Aportaciones al mundo',
         translate: 'NAV.PORTAFOLIO.TITLE',
         type     : 'item',
-        url      : '/home'
+        url      : '/portafolio'
     },
     {
         id       : 'servicios',

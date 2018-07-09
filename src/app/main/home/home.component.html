@@ -1,5 +1,26 @@
-<div class="page-layout blank p-24" fusePerfectScrollbar>
+<div class="page-layout blank fullwidth" fusePerfectScrollbar>
+    <ngu-carousel
+        [inputs]="carousel">
+        <ngu-item NguCarouselItem>
+            <img class="img-banner" src="/assets/images/carousel/carousel-1.jpg"/>
+        </ngu-item>
+        <ngu-item NguCarouselItem>
+            <img class="img-banner" src="/assets/images/carousel/lentes-reebok.jpg"/>
+        </ngu-item>
+        <ngu-item NguCarouselItem>
+            <img class="img-banner" src="/assets/images/carousel/oda-rb-bocho.jpg"/>
+        </ngu-item>
+        <ngu-item NguCarouselItem>
+            <img class="img-banner" src="/assets/images/carousel/carousel-end.jpg"/>
+        </ngu-item>
 
-    <h2>{{'SAMPLE.HELLO' | translate}}</h2>
+        <button  mat-icon-button class="leftRs" NguCarouselPrev aria-label="Anterior">
+            <mat-icon class="s-70">chevron_left</mat-icon>
+        </button>
+        <button  mat-icon-button class="rightRs" NguCarouselNext aria-label="Siguiente">
+            <mat-icon class="s-70">chevron_right</mat-icon>
+        </button>
+    </ngu-carousel>
 
+    <portafolio></portafolio>
 </div>

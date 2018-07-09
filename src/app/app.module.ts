@@ -14,14 +14,22 @@ import { FuseSidebarModule, FuseThemeOptionsModule } from '@fuse/components';
 
 import { fuseConfig } from 'app/fuse-config';
 
+// Third party imports
+
+
 import { AppComponent } from 'app/app.component';
 import { LayoutModule } from 'app/layout/layout.module';
 import { HomeModule } from 'app/main/home/home.module';
+import { PortafolioModule} from 'app/main/portafolio/portafolio.module';
 
 const appRoutes: Routes = [
     {
         path      : '**',
         redirectTo: 'home'
+    },
+    {
+        path      : 'portafolio',
+        redirectTo: 'portafolio'
     }
 ];
 
@@ -50,9 +58,13 @@ const appRoutes: Routes = [
         FuseSidebarModule,
         FuseThemeOptionsModule,
 
+        // Ngx-Bootstrap
+
+
         // App modules
         LayoutModule,
-        HomeModule
+        HomeModule,
+        PortafolioModule
     ],
     bootstrap   : [
         AppComponent
