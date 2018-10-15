@@ -1,0 +1,49 @@
+.header-bottom {
+    font-family:  "Fira Sans",sans-serif !important;
+    span {
+        font-family:  "Fira Sans",sans-serif !important;
+        letter-spacing: 0.05em;
+    }
+
+    h5 {
+        font-size: 19px;
+    }
+    h4 {
+        color: #2E49D1;
+    }
+}
+
+.grid-cards {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 832px;
+}
+.fuse-card {
+    font-size: 13px;
+    font-family: "Fira Sans",sans-serif !important;
+    max-width: 408px;
+    height: 100% !important;
+    max-height: 221px !important;
+    line-height: 1.4em;
+
+    .h3 {
+        letter-spacing: 0.1em;
+    }
+}
+
+.bg-blue {
+    color: white;
+    background: #2e05e9;
+}
+.bg-red {
+    color: white;
+    background: #e61010;
+}
+.bg-green {
+    color: white;
+    background: #04c752;
+}
+.bg-yellow {
+    color: white;
+    background: #ffb340;
+}

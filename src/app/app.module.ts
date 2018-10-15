@@ -21,6 +21,7 @@ import { AppComponent } from 'app/app.component';
 import { LayoutModule } from 'app/layout/layout.module';
 import { HomeModule } from 'app/main/home/home.module';
 import { PortafolioModule} from 'app/main/portafolio/portafolio.module';
+import { ServiciosModule } from 'app/main/servicios/servicios.module';
 
 const appRoutes: Routes = [
     {
@@ -30,6 +31,10 @@ const appRoutes: Routes = [
     {
         path      : 'portafolio',
         redirectTo: 'portafolio'
+    },
+    {
+        path      : 'servicios',
+        redirectTo: 'servicios'
     }
 ];
 
@@ -64,7 +69,8 @@ const appRoutes: Routes = [
         // App modules
         LayoutModule,
         HomeModule,
-        PortafolioModule
+        PortafolioModule,
+        ServiciosModule
     ],
     bootstrap   : [
         AppComponent
